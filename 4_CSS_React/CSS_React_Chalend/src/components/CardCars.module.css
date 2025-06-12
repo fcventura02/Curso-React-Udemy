@@ -1,0 +1,43 @@
+.cardCar {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: column;
+}
+.title_container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.details {
+  display: flex;
+  gap: 15px;
+}
+.top_speed {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  min-width: 120px;
+  max-width: 50%;
+}
+.top_speed span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.fuel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  min-width: 120px;
+  max-width: 50%;
+}
+.fuel span {
+  font-size: 20px;
+  font-weight: 700;
+}

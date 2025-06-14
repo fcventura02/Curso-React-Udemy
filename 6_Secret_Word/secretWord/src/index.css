@@ -1,0 +1,86 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: hsl(222.2 47.4% 11.2%);
+  --color-secondary: hsl(210 40% 96.1%);
+  --color-primary-hover: hsl(222.2 47.4% 11.2% / 0.9);
+  --color-secondary-hover: hsl(210 40% 96.1% / 0.9);
+  --color-Muted-Foreground: hsl(215.4 16.3% 46.9%);
+  --color-white: hsl(0 0% 100%);
+  --color-border: hsl(214.3 31.8% 91.4%);
+  --collor-Blue-500: #3b82f6;
+  --collor-Blue-600: rgb(37 99 235);
+  --collor-Green-500: #10b981;
+  --collor-Yellow-400: #fbbf24;
+  --collor-Red-500: #ef4444;
+
+  --font-sm: clamp(0.875rem, 0.7321rem + 0.4762vw, 1rem);
+  --font-md: clamp(1rem, 0.7143rem + 0.9524vw, 1.25rem);
+  --font-xl: clamp(1.25rem, 0.9643rem + 0.9524vw, 1.5rem);
+  --font-2xl: clamp(1.5rem, 1.0714rem + 1.4286vw, 1.875rem);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+boddy {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsl(210 40% 96.1%);
+  color: #fff;
+}
+
+input{
+  background: var(--color-white);
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-md);
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+input:focus{
+  outline: 2px solid var(--color-primary);
+}
+
+.primary {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  transition: color, background 0.15s linear;
+}
+.secondary {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  transition: color, background 0.15s linear;
+}
+.primary:hover {
+  color: var(--color-secondary-hover);
+  background-color: var(--color-primary-hover);
+}
+.secondary:hover {
+  color: var(--color-primary-hover);
+  background-color: var(--color-secondary-hover);
+}

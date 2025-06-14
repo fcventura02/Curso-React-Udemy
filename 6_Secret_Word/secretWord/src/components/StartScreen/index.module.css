@@ -1,0 +1,97 @@
+.title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(2.5rem, 1.0714rem + 4.7619vw, 3.75rem);
+  line-height: clamp(2.5rem, 1.0714rem + 4.7619vw, 3.75rem);
+  color: var(--color-primary);
+}
+.title_icon {
+  font-size: clamp(3.75rem, 2.3214rem + 4.7619vw, 5rem);
+  line-height: 0;
+}
+.title_destaque {
+  font-size: clamp(1.75rem, 1.1786rem + 1.9048vw, 2.25rem);
+  line-height: clamp(1.75rem, 1.1786rem + 1.9048vw, 2.25rem);
+  color: var(--color-Foreground);
+}
+.subtitle {
+  font-size: clamp(1.25rem, 0.9643rem + 0.9524vw, 1.5rem);
+  text-align: center;
+  color: var(--color-Muted-Foreground);
+  margin-bottom: 30px;
+}
+
+.card_container {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 896px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 2rem 1.75rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card_title {
+  font-size: var(--font-2xl);
+  line-height: 1.2em;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+}
+.card_text,
+.card_number {
+  font-size: var(--font-sm);
+  line-height: 1.5em;
+  color: var(--color-Muted-Foreground);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card_number {
+  display: block;
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card_details div:nth-child(1) .card_number {
+  color: var(--collor-Blue-500);
+}
+.card_details div:nth-child(2) .card_number {
+  color: var(--collor-Green-500);
+}
+
+.card_icon {
+  font-size: clamp(1.5rem, 1.0714rem + 1.4286vw, 1.875rem);
+  line-height: clamp(1.5rem, 1.0714rem + 1.4286vw, 1.875rem);
+  text-align: center;
+}
+
+.card_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-top: .8rem;
+}

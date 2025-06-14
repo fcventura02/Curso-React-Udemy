@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.placar_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #facc15, #f97316);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.placar_titulo {
+  font-weight: 700;
+  font-size: var(--font-md);
+  line-height: 1.2em;
+  text-align: center;
+}
+.placar_pontos {
+  font-weight: 700;
+  font-size: var(--font-2xl);
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.game_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.game_title {
+  font-size: var(--font-2xl);
+  line-height: 1.2em;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game_text {
+  font-size: var(--font-sm);
+  line-height: 1.5em;
+  color: var(--color-Muted-Foreground);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.game_palavra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding-block: 2rem;
+}
+.game_letra {
+  font-size: var(--font-2xl);
+  line-height: 1.2em;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  padding: 0.8rem;
+  border: 2px solid var(--collor-Blue-600);
+  border-radius: 8px;
+  background-color: var(--collor-Blue-500);
+  color: var(--color-white);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.game_interacao_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.game_progresso {
+}

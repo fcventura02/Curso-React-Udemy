@@ -21,8 +21,11 @@
   --collor-Blue-500: #3b82f6;
   --collor-Blue-600: rgb(37 99 235);
   --collor-Green-500: #10b981;
+  --collor-Green-600: #00a63e;
   --collor-Yellow-400: #fbbf24;
+  --collor-Red-100: #ffe2e2;
   --collor-Red-500: #ef4444;
+  --collor-Red-800: #9f0712;
 
   --font-sm: clamp(0.875rem, 0.7321rem + 0.4762vw, 1rem);
   --font-md: clamp(1rem, 0.7143rem + 0.9524vw, 1.25rem);
@@ -46,6 +49,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: hsl(210 40% 96.1%);
   color: #fff;
+  overflow-x: hidden;
 }
 
 input{

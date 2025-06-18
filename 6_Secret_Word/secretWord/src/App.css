@@ -41,3 +41,8 @@
 .btn_outline:hover{
   background-color: var(--color-secondary-hover);
 }
+
+.btn:disabled{
+  opacity: .7;
+  cursor: not-allowed;
+}

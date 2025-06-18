@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-const StartScreen = ({ words = [], clickStart }) => {
+const StartScreen = ({ words = [], clickStart, score }) => {
   return (
     <>
       <div className={styles.title_container}>
@@ -38,7 +38,7 @@ const StartScreen = ({ words = [], clickStart }) => {
           <h3 className={styles.card_title}>📊 Suas Estatísticas</h3>
           <div className={styles.card_details}>
             <div>
-              <span className={styles.card_number}>0</span>
+              <span className={styles.card_number}>{score}</span>
               <p className={styles.card_text}>Recorde de pontos</p>
             </div>
             <div>

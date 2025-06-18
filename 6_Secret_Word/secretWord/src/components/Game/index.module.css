@@ -7,6 +7,7 @@
 }
 
 .placar_container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -77,7 +78,16 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: rotateY(180deg);
 }
+
+.game_letra_correta {
+  background-color: var(--collor-Green-500);
+  border-color: var(--collor-Green-600);
+  transform: rotateY(0deg);
+  transition: linear 0.3s transform, background;
+}
+
 .game_interacao_container {
   display: flex;
   flex-direction: row;
@@ -86,4 +96,97 @@
   gap: 0.5rem;
 }
 .game_progresso {
+}
+
+.game_container_letras_utilizadas {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.game_container_letras_utilizadas p {
+  color: var(--collor-Red-500);
+  font-size: var(--font-sm);
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.game_lista_letras_utilizadas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  list-style: none;
+}
+
+.game_letras_utilizadas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: var(--font-md);
+  font-weight: 700;
+  line-height: 1.2em;
+  width: 2rem;
+  height: 2rem;
+  color: var(--collor-Red-800);
+  background-color: var(--collor-Red-100);
+}
+
+.finish_game {
+  min-width: 300px;
+  position: absolute;
+  top: -500px;
+  left: 50%;
+  transition: .9s linear top;
+  transform: translateX(-50%);
+  padding: 1.4rem;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.finish_game div p{
+  font-size: var(--font-md);
+  line-height: 1.2em;
+  text-align: center;
+  padding: .4rem;
+}
+
+.finish_gameOver{
+  background-color: var(--collor-Red-500);
+  top: 15px;
+  transition: .9s linear top;
+}
+
+.finish_win{
+  background-color: var(--collor-Green-500);
+  top: 15px;
+  transition: .9s linear top;
+}
+
+.alert{
+  position: absolute;
+  bottom: 20px;
+  right: -350px;
+  transition: right .3s linear;
+  background-color: var(--collor-Red-500);
+  color: var(--collor-white);
+  padding: 1.2rem 1.5rem;
+  margin: .4rem;
+  border-radius: .7rem;
+  width: 300px;
+}
+
+.alert_open{
+  right: 0;
+  transition: right .3s linear;
 }

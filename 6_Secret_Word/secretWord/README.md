@@ -37,6 +37,12 @@ Além disso, o jogo conta com um sistema de pontuação e diferentes estados de 
 
 ---
 
+## 🔗 Link para acessar o projeto online
+
+👉 [https://palavrasecreta-udemy.vercel.app/](https://palavrasecreta-udemy.vercel.app/)
+
+---
+
 ## ⚙️ Como rodar o projeto localmente
 
 1. Clone o repositório:

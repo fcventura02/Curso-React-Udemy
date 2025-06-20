@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "9d8d",
+      "name": "teste",
+      "price": "12"
+    },
+    {
+      "id": "e80c",
+      "name": "capa de chuva",
+      "price": "50.50"
+    },
+    {
+      "id": "d854",
+      "name": "cadeira",
+      "price": "200"
+    },
+    {
+      "id": "039b",
+      "name": "suporte de monitor",
+      "price": "300"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "e80c",
+      "name": "capa de chuva",
+      "price": "50.50"
+    },
+    {
+      "id": "d854",
+      "name": "cadeira",
+      "price": "200"
+    },
+    {
+      "id": "039b",
+      "name": "suporte de monitor",
+      "price": "300"
+    }
+  ]
+}

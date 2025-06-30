@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-const env = import.meta.env
+// eslint-disable-next-line no-undef
+const env = process.env;
 
 const firebaseConfig = {
   apiKey: env.FIREBASE_API_KEY,

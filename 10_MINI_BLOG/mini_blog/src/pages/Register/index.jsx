@@ -9,6 +9,7 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
+  // eslint-disable-next-line no-unused-vars
   const { createUser, error: authError, loading } = useAuthentication();
 
   const handleSubmit = async (e) => {

@@ -95,11 +95,11 @@ export const useAuthentication = () => {
       console.log(systemErrorMessage);
 
       setError(systemErrorMessage);
+    } finally {
+      console.log(error);
+
+      setLoading(false);
     }
-
-    console.log(error);
-
-    setLoading(false);
   };
 
   useEffect(() => {

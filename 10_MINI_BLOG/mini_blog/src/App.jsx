@@ -19,6 +19,7 @@ import Dashboard from "./pages/Dashboard";
 import Erro404 from "./pages/Erro404";
 import Search from "./pages/Search";
 import Post from "./pages/Post";
+import EditPost from "./pages/EditPost";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -60,6 +61,10 @@ function App() {
               <Route
                 path="posts/create"
                 element={userIsLogged(<CreatePost />)}
+              />
+              <Route
+                path="posts/edit/:id"
+                element={userIsLogged(<EditPost />)}
               />
               <Route path="dashboard" element={userIsLogged(<Dashboard />)} />
               <Route path="*" element={<Erro404 />} />

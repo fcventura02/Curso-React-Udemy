@@ -17,6 +17,7 @@ import "./App.css";
 import CreatePost from "./pages/CreatePost";
 import Dashboard from "./pages/Dashboard";
 import Erro404 from "./pages/Erro404";
+import Search from "./pages/Search";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -30,8 +31,9 @@ function App() {
     });
   }, [auth]);
 
-  const redirectPageIfUserNotLogged = (page)=> !user ? page : <Navigate to="/" />
-  const userIsLogged = (page)=> user ? page : <Navigate to="/login" />
+  const redirectPageIfUserNotLogged = (page) =>
+    !user ? page : <Navigate to="/" />;
+  const userIsLogged = (page) => (user ? page : <Navigate to="/login" />);
 
   return (
     <AuthProvider value={{ user }}>
@@ -43,10 +45,20 @@ function App() {
           ) : (
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="search" element={<Search />} />
               <Route path="about" element={<About />} />
-              <Route path="login" element={redirectPageIfUserNotLogged(<Login />)} />
-              <Route path="register" element={redirectPageIfUserNotLogged(<Register />)} />
-              <Route path="/posts/create" element={userIsLogged(<CreatePost />)} />
+              <Route
+                path="login"
+                element={redirectPageIfUserNotLogged(<Login />)}
+              />
+              <Route
+                path="register"
+                element={redirectPageIfUserNotLogged(<Register />)}
+              />
+              <Route
+                path="posts/create"
+                element={userIsLogged(<CreatePost />)}
+              />
               <Route path="dashboard" element={userIsLogged(<Dashboard />)} />
               <Route path="*" element={<Erro404 />} />
             </Routes>

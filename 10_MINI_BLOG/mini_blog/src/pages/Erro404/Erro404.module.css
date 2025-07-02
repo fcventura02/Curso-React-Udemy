@@ -1,0 +1,17 @@
+.erro404 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.erro404 p {
+  color: #aaa;
+  margin-bottom: 2em;
+}
+
+.erro404 a {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 15px;
+}

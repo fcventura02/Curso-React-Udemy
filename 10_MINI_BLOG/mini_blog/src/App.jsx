@@ -18,6 +18,7 @@ import CreatePost from "./pages/CreatePost";
 import Dashboard from "./pages/Dashboard";
 import Erro404 from "./pages/Erro404";
 import Search from "./pages/Search";
+import Post from "./pages/Post";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -55,6 +56,7 @@ function App() {
                 path="register"
                 element={redirectPageIfUserNotLogged(<Register />)}
               />
+              <Route path="posts/:id" element={<Post />} />
               <Route
                 path="posts/create"
                 element={userIsLogged(<CreatePost />)}

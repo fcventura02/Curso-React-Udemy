@@ -2,12 +2,27 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 
-const port = 5000;
+require("dotenv").config();
+
+const port = process.env.PORT;
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+const router = require("./routes/router.js");
+
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+
+app.use(
+  "./uploads/router.js",
+  express.static(path.join(__dirname, "/uploads"))
+);
+
+require("./config/db.js");
+
+app.use(router);
 
 app.listen(port, () => {
   console.log(`app rodando na porta ${port}`);

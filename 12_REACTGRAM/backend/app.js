@@ -11,16 +11,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const router = require("./routes/router.js");
-
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
-app.use(
-  "./uploads/router.js",
-  express.static(path.join(__dirname, "/uploads"))
-);
+app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 require("./config/db.js");
+
+const router = require("./routes/router.js");
 
 app.use(router);
 

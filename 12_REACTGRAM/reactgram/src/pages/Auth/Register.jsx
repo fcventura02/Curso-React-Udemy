@@ -12,7 +12,7 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [confirm_password, setConfirmPassword] = useState("");
 
   const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ const Register = () => {
       name,
       email,
       password,
-      confirmPassword,
+      confirm_password,
     };
 
     console.log(user);
@@ -64,7 +64,7 @@ const Register = () => {
           type="password"
           placeholder="Confirme a senha"
           onChange={(e) => setConfirmPassword(e.target.value)}
-          value={confirmPassword}
+          value={confirm_password}
         />
         {!loading && <input type="submit"  value="Cadastrar" />}
         {loading && <input type="submit" disabled value="Aguarde..." />}

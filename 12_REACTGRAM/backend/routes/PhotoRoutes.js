@@ -36,7 +36,7 @@ router.get("/search", authGuard, searchPhotos);
 
 router.get("/user/:id", getUserPhotos);
 
-router.get("/:id", authGuard, getPhotoById);
+router.get("/:id", getPhotoById);
 router.put(
   "/:id",
   authGuard,

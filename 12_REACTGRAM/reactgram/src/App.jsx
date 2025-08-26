@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/indes";
 import EditProfile from "./pages/EditProfile";
 import { useAuth } from "./hooks/useAuth";
+import Photo from "./pages/Photo";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             path="register"
             element={!auth ? <Register /> : <Navigate to="/" />}
           />
+          <Route path="photos/:id" element={<Photo />} />
         </Routes>
       </div>
       <Footer />

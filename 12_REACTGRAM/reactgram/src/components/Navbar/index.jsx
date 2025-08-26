@@ -39,6 +39,7 @@ const Navbar = () => {
     e.preventDefault();
 
     if (query) {
+      setQuery("");
       return navigate(`/search?q=${query}`);
     }
   };
@@ -53,6 +54,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Pesquisar"
+          value={query || ""}
           onChange={(e) => setQuery(e.target.value)}
         />
       </form>
